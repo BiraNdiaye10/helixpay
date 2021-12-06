@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Admin </title>
+</head>
+<body>
+   <div class="side-menu">
+       <div class="brand-name">
+       <img src="./assets/images/logo-2.png" style="width: 130px;height: 100px;" alt="">
+       </div>
+       <ul>
+        <li> <img src="./assets/images/recharger.png" style="width: 30px;height: 30px;" alt="">&nbsp; <span>Recharger mon compte</span></li>
+        <li> <img src="./assets/images/recharger.png" style="width: 30px;height: 30px;" alt="">&nbsp; <span>Recharge en attente</span></li>
+        <li> <img src="./assets/images/recharger.png" style="width: 30px;height: 30px;" alt="">&nbsp; <span>Mes recharges</span></li>
+        <li> <img src="./assets/images/profilb.png" style=" width: 30px;height: 30px;" alt="">&nbsp; <span>Profil du gestionnaire</span></li>
+        <li> <img src="./assets/images/retrait.png" style="width: 30px;height: 30px; " alt=""> &nbsp;  <span>Compte de retrait</span></li>
+        <li> <img src="./assets/images/retrait.png" style="width: 30px;height: 30px;" alt=""> &nbsp;<span>Retirer de l'argent</span></li>
+        <li> <img src="./assets/images/retrait.png" style="width: 30px;height: 30px;" alt=""> &nbsp;<span>Retraits en attente</span></li>
+       </ul>
+   </div> 
+   <div class="container">
+       <div class="header">
+           <div class="nav">
+               <div class="search">
+                <input type="text" placeholder="Search..">
+                <button type="submit"><img src="./assets/images/search.png" alt=""></button>
+               </div>
+               <div class="user">
+                   <a href="#" class="btn">Add new</a>
+                   <img src="./assets/images/notification.png" alt="">
+               <div class="img-case">
+                <img src="./assets/images/user.jpeg" alt="">
+                
+               </div>
+            <!-- <div class="action">
+                <div class="profile" (click)="menuToggle(); ">
+                    <img src="./assets/images/user.jpeg" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Mon profile</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#"> Deconnexion</a></li>
+                    </ul>
+                </div>
+            </div> -->
+
+
+
+            </div>
+         </div>
+       </div>
+       <div class="content">
+           <div class="cards">
+               <div class="card">
+                   <div class="box">
+                       <h1>5194</h1>
+                       <h3>Clients</h3>
+                   </div>
+                   <div class="icon-case">
+                       <img src="./assets/images/profil.png" style="width: 80px;height: 80px;"alt="" >
+                   </div>
+               </div>
+               <div class="card">
+                <div class="box">
+                    <h1>594</h1>
+                    <h3>Transactions/j</h3>
+                </div>
+                <div class="icon-case">
+                    <img src="./assets/images/profil.png" style="width: 80px;height: 80px;"alt="" >
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <h1>0</h1>
+                    <h3>Compte inactif</h3>
+                </div>
+                <div class="icon-case">
+                    <img src="./assets/images/profil.png" style="width: 80px;height: 80px;"alt="" >
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <h1>4194</h1>
+                    <h3>Compte actif</h3>
+                </div>
+                <div class="icon-case">
+                    <img src="./assets/images/profil.png" style="width: 80px;height: 80px;"alt="" >
+                </div>
+            </div>
+           </div>
+           <div class="content-2">
+               <div class="recent-payments">
+                   <div class="title">
+                    <h2> Payments recent</h2>
+                    <a href="" class="btn">tout voir</a>
+                   </div>
+                   <table>
+                       <tr>
+                           <th>Nom</th>
+                           <th>Structure</th>
+                           <th>Montant</th>
+                           <th>Option</th>
+                       </tr>
+                       <tr>
+                           <td>Aissatou</td>
+                           <td>test</td>
+                           <td>10000FCFA</td>
+                           <td><a href="#" class="btn">Voir</a></td>
+                       </tr>
+                   </table>
+               </div>
+               <div class="new-clients">
+                <div class="title">
+                    <h2> Nouveaux clients</h2>
+                    <a href="" class="btn">tout voir</a>
+                   </div>
+                   <table>
+                       <th>Profile</th>
+                       <th>Name</th>
+                       <th>option</th>
+                   </table>
+               </div>
+           </div>
+       </div>
+   </div>
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

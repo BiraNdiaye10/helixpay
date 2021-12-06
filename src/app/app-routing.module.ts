@@ -6,7 +6,7 @@ const routes: Routes = [
   
   // Home
   { path: '', loadChildren: () => import('./components/pages/home/home.module').then(m => m.HomeModule), data: { breadcrumb: 'Homepage' } },
-  { path: 'home-v2', loadChildren: () => import('./components/pages/home-v2/home-v2.module').then(m => m.HomeV2Module), data: { breadcrumb: 'Homepage' } },
+  { path: 'dashboard', loadChildren: () => import('./components/pages/dashboard/home-v2.module').then(m => m.HomeV2Module), data: { breadcrumb: 'Homepage' } },
   { path: 'home-v3', loadChildren: () => import('./components/pages/home-v3/home-v3.module').then(m => m.HomeV3Module), data: { breadcrumb: 'Homepage' } },
   // About
   { path: 'about', loadChildren: () => import('./components/pages/parteners/about.module').then(m => m.AboutModule), data: { breadcrumb: 'About Us' } },
@@ -26,7 +26,7 @@ const routes: Routes = [
   { path: 'shedules-v2', loadChildren: () => import('./components/pages/schedule-details/schedule-details.module').then(m => m.ScheduleDetailsModule), data: { breadcrumb: 'Schedules v2' } },
   { path: 'partenaires', loadChildren: () => import('./components/pages/sponser/sponser.module').then(m => m.SponserModule), data: { breadcrumb: 'Partenaires' } },
   { path: 'connexion', loadChildren: () => import('./components/pages/connexion/gallery.module').then(m => m.GalleryModule), data: { breadcrumb: 'Connexion' } },
-  { path: 'gallery-v2', loadChildren: () => import('./components/pages/gallery-two/gallery-two.module').then(m => m.GalleryTwoModule), data: { breadcrumb: 'Gallery v2' } },
+  { path: 'dashboardadmin', loadChildren: () => import('./components/pages/dashboardadmin/gallery-two.module').then(m => m.GalleryTwoModule), data: { breadcrumb: 'Gallery v2' } },
   { path: 'creeruncompte', loadChildren: () => import('./components/pages/creeruncompte/pricing.module').then(m => m.PricingModule), data: { breadcrumb: 'Pricing' } },
   { path: 'commentcamarche', loadChildren: () => import('./components/pages/commentcamarche/faqs.module').then(m => m.FaqsModule), data: { breadcrumb: "Comment ça marche ?" } },
   { path: 'contact', loadChildren: () => import('./components/pages/contact/contact.module').then(m => m.ContactModule), data: { breadcrumb: 'Contact Us' } },

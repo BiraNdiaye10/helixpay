@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Admin </title>
+</head>
+<body>
+   <div class="side-menu">
+       <div class="brand-name">
+       <img src="./assets/images/logo-2.png" style="width: 130px;height: 100px;" alt="">
+       </div>
+       <ul>
+        <li> <img src="./assets/images/recharger.png" style="width: 30px;height: 30px;" alt="">&nbsp; <span>Recharger mon compte</span></li>
+        <li> <img src="./assets/images/recharger.png" style="width: 30px;height: 30px;" alt="">&nbsp; <span>Recharge en attente</span></li>
+        <li> <img src="./assets/images/recharger.png" style="width: 30px;height: 30px;" alt="">&nbsp; <span>Mes recharges</span></li>
+        <li> <img src="./assets/images/profilb.png" style=" width: 30px;height: 30px;" alt="">&nbsp; <span>Profil du gestionnaire</span></li>
+        <li> <img src="./assets/images/retrait.png" style="width: 30px;height: 30px; " alt=""> &nbsp;  <span>Compte de retrait</span></li>
+        <li> <img src="./assets/images/retrait.png" style="width: 30px;height: 30px;" alt=""> &nbsp;<span>Retirer de l'argent</span></li>
+        <li> <img src="./assets/images/retrait.png" style="width: 30px;height: 30px;" alt=""> &nbsp;<span>Retraits en attente</span></li>
+       </ul>
+   </div> 
+   <div class="container">
+       <div class="header">
+           <div class="nav">
+               <div class="search">
+                <input type="text" placeholder="Search..">
+                <button type="submit"><img src="./assets/images/search.png" alt=""></button>
+               </div>
+               <div class="user">
+                   <a href="#" class="btn">Add new</a>
+                   <img src="./assets/images/notification.png" alt="">
+               <div class="img-case">
+                <img src="./assets/images/user.jpeg" alt="">
+                
+               </div>
+            </div>
+         </div>
+       </div>
+       <div class="content">
+   
+           <div class="cards">
+               <div class="card">
+                <mat-tab-group>
+                    <mat-tab label="Partenaires"> 
+                        
+                       <div class="row">
+                          
+                           <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="car">
+                                <img src="../assets/images/wave.png" alt="">
+                            </div>
+                           </div>
+                           <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="car">
+                                <img src="../assets/images/free.png" alt="">
+                            </div>
+                           </div>
+                           <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="car">
+                                <img src="../assets/images/om.png" alt="">
+                            </div>
+                           </div>
+                           <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="car">
+                                <img src="../assets/images/e-money.png" alt="">
+                            </div>
+                           </div>
+                       </div>
+                       <div class="row">
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                         <div class="car">
+                             <img src="../assets/images/logo.png" alt="">
+                         </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                         <div class="car">
+                             <img src="../assets/images/logo.png" alt="">
+                         </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                         <div class="car">
+                             <img src="../assets/images/logo.png" alt="">
+                         </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                         <div class="car">
+                             <img src="../assets/images/logo.png" alt="">
+                         </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                         <div class="car">
+                             <img src="../assets/images/logo.png" alt="">
+                         </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                         <div class="car">
+                             <img src="../assets/images/logo.png" alt="">
+                         </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                         <div class="car">
+                             <img src="../assets/images/logo.png" alt="">
+                         </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                         <div class="car">
+                             <img src="../assets/images/logo.png" alt="">
+                         </div>
+                        </div>
+                    </div>
+                    </mat-tab>
+                    <mat-tab label="Transfere d'argent"> Content 2 </mat-tab>
+                    <mat-tab label="Paiement de Facture"> Content 3 </mat-tab>
+                    <mat-tab label="Mobile Money"> Content 2 </mat-tab>
+                   
+                  </mat-tab-group>
+                  
+                  
+               </div>
+              
+           </div>
+           
+       </div>
+   </div>
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
