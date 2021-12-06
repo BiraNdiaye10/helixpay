@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "img": "assets/images/wave.png",
+        "title": "Company Name"
+    },
+    {
+        "id": 2,
+        "img": "assets/images/e-money.png",
+        "title": "Company Name"
+    },
+    {
+        "id": 3,
+        "img": "assets/images/free.png",
+        "title": "Company Name"
+    },
+    {
+        "id": 4,
+        "img": "assets/images/om.png",
+        "title": "Company Name"
+    }
+    
+]

@@ -1,0 +1,17 @@
+.text{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    /* font-weight: 600; */
+    font-size: 24px;
+    line-height: 40px;
+    color: #071981;
+    /* margin-top: 60px; */
+   }
+   .card-title{
+    color: #071981;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    width: 250px;
+}

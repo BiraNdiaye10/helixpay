@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "linkText": "A propos",
+        "child": true,
+        "submenu": [
+            {
+                "id": 11,
+                "link": "/api",
+                "linkText": "API Helixpay"
+            },
+            {
+                "id": 12,
+                "link": "/partenaires",
+                "linkText": "Partenaire Integrateur"
+            }
+        ]
+       
+    },
+    {
+        "id": 2,
+        "linkText": "Comment ça marche ?",
+        "link": "/commentcamarche"
+    },
+    {
+        "id": 3,
+        "linkText": "Developpeurs",
+        "child": false,
+        "submenu": [
+            {
+                "id": 31,
+                "link": "/speakers",
+                "linkText": "Our Speakers"
+            },
+            {
+                "id": 32,
+                "link": "/speaker-details/1",
+                "linkText": "Speakers Details"
+            }
+        ]
+    }
+   
+]

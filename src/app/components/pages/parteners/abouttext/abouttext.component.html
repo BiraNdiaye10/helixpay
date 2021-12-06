@@ -1,0 +1,41 @@
+<section class="about-area-v4 pt-120">
+    <div class="container">
+        <div class="about-we mb-40">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let item of aboutgrid">
+                    <div class="grid-item">
+                        <div class="grid-inner-item">
+                            <img [src]="item.icon" [alt]="item.title">
+                            <h4>{{item.title}}</h4>
+                            <p>{{item.text}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-me">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="about-img">
+                        <img src="assets/images/about-7.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="ovent-content-box">
+                        <div class="section-title section-title-3 mb-20">
+                            
+                            <h2>Helixpay</h2>
+                        </div>
+                        <h4>Le choix parfait pour les modes de paiements en ligne .</h4>
+                        <p>Helixpay est un service de paiement en ligne. <br>
+                            C'est une solution de paiement en espèces, simple et sécurisée, 
+                            destinée aux sites marchands afin d’offrir à leurs 
+                            clients un canal de paiement acceptant tous les moyens de paiement sur votre site internet.</p>
+                        <p></p>
+                        <img src="assets/images/logo-2.png" alt="" style="width: 70px; height: 50px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

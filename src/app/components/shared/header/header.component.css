@@ -1,0 +1,31 @@
+.btncompte{
+    background-color: #2f5597;
+    border-radius: 50px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  .btnlog{
+    background-color: transparent;
+    border-radius: 50px;
+    border-color: #2f5597;
+    font-size: 16px !important;
+    font-family: 'Montserrat', sans-serif;
+    color: #2f5597;
+    
+  }
+.img-fluid{
+    margin-top: 12px;
+    height: 50px;
+    width: 200px ;
+    object-fit: cover;
+}  
+.btncompte:hover{background-color: #ffffff !important;
+                 color: blue !important;
+                 border-color: #2f5597;
+                }
+.btnlog:hover{
+              background-color: #cedefa !important;
+              color: blue !important;
+            }

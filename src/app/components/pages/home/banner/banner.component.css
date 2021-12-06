@@ -1,0 +1,24 @@
+.btncompte{
+    background-color: #2f5597;
+    border-radius: 50px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 220px;
+    height: 60px;
+  }
+  .btnlog{
+    background-color: transparent;
+    border-radius: 50px;
+    border-color: #2f5597;
+    font-size: 18px !important;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    width: 220px;
+    height: 60px;
+    
+  }
+  .btncompte:hover{background-color: #ffffff !important;
+                   color: blue !important;}
+  .btnlog:hover{background-color: #ffffff !important;
+                 color: blue !important;}

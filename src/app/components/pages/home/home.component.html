@@ -1,0 +1,27 @@
+<app-header></app-header>
+<app-banner></app-banner>
+<app-about></app-about>
+<!-- team remplace nos solutions -->
+<app-team></app-team>
+<app-video></app-video>
+<!-- <app-contact></app-contact> -->
+<!-- debut partenaires -->
+<section class="sponsors-area sponsors-area-2 pt-120 pb-120">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title section-title-2 text-center mb-80">
+                    <!-- <span class="span">03</span> -->
+                    <h2>Nos partenaires</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <app-sponsers></app-sponsers>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- partenaires fin -->
+<app-footer [layout]="classname" [logo]="ftlogo" [bg]="ftbg"></app-footer>
