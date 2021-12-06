@@ -316,7 +316,7 @@ p {
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
-	background: #ec398b;
+	background: #050299;
 	-webkit-animation: ball-pulse-sync .6s 0s infinite ease-in-out;
 	animation: ball-pulse-sync .6s 0s infinite ease-in-out;
 }
