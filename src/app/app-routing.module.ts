@@ -22,7 +22,7 @@ const routes: Routes = [
   
   { path: 'shop', loadChildren: () => import('./components/pages/shop/shop.module').then(m => m.ShopModule), data: { breadcrumb: 'Shop' } },
   { path: 'shop-details/:id', loadChildren: () => import('./components/pages/shop-details/shop-details.module').then(m => m.ShopDetailsModule), data: { breadcrumb: 'Shop Details' } },
-  { path: 'shedules', loadChildren: () => import('./components/pages/schedules/schedules.module').then(m => m.SchedulesModule), data: { breadcrumb: 'Schedules' } },
+  { path: 'rechargermoncompte', loadChildren: () => import('./components/pages/rechargermoncompte/schedules.module').then(m => m.SchedulesModule), data: { breadcrumb: 'Schedules' } },
   { path: 'shedules-v2', loadChildren: () => import('./components/pages/schedule-details/schedule-details.module').then(m => m.ScheduleDetailsModule), data: { breadcrumb: 'Schedules v2' } },
   { path: 'partenaires', loadChildren: () => import('./components/pages/sponser/sponser.module').then(m => m.SponserModule), data: { breadcrumb: 'Partenaires' } },
   { path: 'connexion', loadChildren: () => import('./components/pages/connexion/gallery.module').then(m => m.GalleryModule), data: { breadcrumb: 'Connexion' } },
@@ -30,7 +30,7 @@ const routes: Routes = [
   { path: 'creeruncompte', loadChildren: () => import('./components/pages/creeruncompte/pricing.module').then(m => m.PricingModule), data: { breadcrumb: 'Pricing' } },
   { path: 'commentcamarche', loadChildren: () => import('./components/pages/commentcamarche/faqs.module').then(m => m.FaqsModule), data: { breadcrumb: "Comment ça marche ?" } },
   { path: 'contact', loadChildren: () => import('./components/pages/contact/contact.module').then(m => m.ContactModule), data: { breadcrumb: 'Contact Us' } },
-  { path: 'coming-soon', loadChildren: () => import('./components/pages/coming-soon/coming-soon.module').then(m => m.ComingSoonModule), data: { breadcrumb: 'Coming Soon' } },
+  { path: 'mesrecharges', loadChildren: () => import('./components/pages/mesrecharges/coming-soon.module').then(m => m.ComingSoonModule), data: { breadcrumb: 'Coming Soon' } },
   
   // News
   { path: 'blog/cat/:catId', loadChildren: () => import('./components/pages/blog-grid-two/blog-grid-two.module').then(m => m.BlogGridTwoModule), data: { breadcrumb: 'Blog Grid 3 Col' } },
