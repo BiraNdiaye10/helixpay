@@ -518,7 +518,7 @@
      .cards{
       grid-template-columns: 100%;
     }
-    .champ{margin-left: 0px;}
+    /* .champ{margin-left: 0px;} */
   }
   @media only screen and (max-width: 1200px){
      .sidebar{
@@ -552,4 +552,4 @@
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
 }
-.champ{margin-left: 85px;}
+.champ{padding: 10px;}
