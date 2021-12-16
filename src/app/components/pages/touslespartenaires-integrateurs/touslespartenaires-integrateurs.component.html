@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <input type="checkbox" id="menu" name="">
+  <div class="sidebar">
+    <div class="sidebar-brand">
+        <div><img src="./assets/images/logo.png" alt=""></div>
+      <span>Compte Professionel</span><br>
+      <span style="font-size: 13px;">Numero de compte</span><br> <span style="font-size: 10px;">(14521600346782145578)</span>
+    </div>
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <a routerLink='/dashboard' class="active"><span class="fa fa-th-large" style="font-size: 15px;"></span><span>Dashboard</span></a>
+        </li>
+        <li>
+        
+            <div class="container-fluid" >
+              <ngb-accordion [closeOthers]="true" activeIds="static-1" >
+                  <ngb-panel>
+                    <!-- <span class="fa fa-address-book"></span>&nbsp;&nbsp; -->
+                      <ng-template ngbPanelTitle>
+                        Recharger le compte <i class="fa fa-arrow-circle-down"></i>
+                          <span class="toggle_btn"></span>
+                      </ng-template>
+                      <ng-template ngbPanelContent>
+                          <!-- ================ -->
+                          
+                          <ul>
+                          
+                            <li><a routerLink='/rechargermoncompte'><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Recharge mon Compte</a></li>
+                            <li><a routerLink='/rechargeenattente'><i class="fa fa-address-book"></i>&nbsp;&nbsp;Recharge en attente </a></li>
+                            <li><a routerLink='/mesrecharge'><i class="fa fa-money"></i>&nbsp;&nbsp; Mes recharge</a></li>
+                          </ul>
+                          <!-- ================== -->
+                      </ng-template>
+                  </ngb-panel>
+              </ngb-accordion>
+
+              <ngb-accordion [closeOthers]="true" activeIds="static-1">
+                  <ngb-panel>
+                      <ng-template ngbPanelTitle>
+                         Retirer de l'argent &nbsp;<i class="fa fa-arrow-circle-down"></i>
+                          <span class="toggle_btn"></span>
+                      </ng-template>
+                      <ng-template ngbPanelContent>
+                        <ul>
+                          <li><a routerLink='/retirerdelargent'><i class="fa fa-money"></i>&nbsp;&nbsp;retirer de l'argent </a></li>
+                          <li><a routerLink='/profildugestionnaire'><i class="fa fa-user-circle"></i>&nbsp;&nbsp;Profil du gestionnaire</a></li>
+                          <li><a routerLink='/comptederetrait'> <i class="fa fa-outdent"></i>&nbsp;&nbsp;Compte de retrait</a></li>
+                          <li><a routerLink='/rechargermoncompte'><i class="fa fa-money"></i>&nbsp;&nbsp;Retrait en attente</a></li>
+                        </ul>
+                      </ng-template>
+                  </ngb-panel>
+              </ngb-accordion>   
+            </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <header>
+      <p><label for="menu"><span class="fa fa-bars"></span></label><span class="accueil">Menu</span></p>
+    
+      <div class="search-wrapper">
+        <span class="fa fa-search"></span>
+        <input type="search" name="" placeholder="recherche" />
+      </div>
+    
+      <div class="fa fa-bell">  
+      </div>
+      <div class="user-wrapper" id="dropdown">
+        
+        <div class="row">
+         
+            <div class="col-3">
+              <img src="./assets/images/user.jpeg" width="30" height="30" class="logo-admin">
+              <div class="dropdown-content">
+              <p>Mon profil</p>
+              <p>Deconnexion</p>
+              </div>
+            </div>
+           
+        <div class="col-3"><h4>Aissatou</h4>
+          <small>Admin</small></div>
+        </div>
+        
+        
+        
+      </div>
+    </header>
+    
+    <main>
+      <div class="composant">
+        <div class="ventes">
+          <div class="case">
+                <div class="tableau">
+                  <div><h2 style="text-align: center; margin-top: 20;">Listes des Partenaires Integrateurs</h2></div>
+                    <div class="contact-form" style="margin-top: 30px;">
+                        <div class="form-group">
+                         <div class="row">
+                          <div class="col-sm-1  m-2"><label for="validationDefault04" class="control-label col-sm-6" style="font-size: 13px;">Afficher par</label></div>
+                          <div class="col-sm-1 m-2">
+                          <select class="custom-select" id="validationDefault04" required style="font-size: 13px;">
+                            <option selected disabled value="">10</option>
+                            <option>10</option><option>20</option><option>30</option>
+                          </select></div>
+                          <div class="col-sm-1  m-2" style="font-size: 13px;">entrées</div>
+                         </div>
+                        </div>
+                      </div>
+                      <!-- tableau transaction -->
+                      <table width="100%" style="margin-top: 28px;">
+                        <thead>
+                          <tr style="background-color: rgb(250, 248, 248);">
+                            <td>Logo</td>
+                            <td> Intitulé </td>
+                            <td>Numero Telephone</td>
+                            <td>E-mail</td>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><img src="./assets/images/icon/dibi.png" class="logopartener" alt=""></td>
+                            <td>Allo-dibi</td>
+                            <td>76 23 54 89</td>
+                            <td>allo-dibi@gmail.com</td>
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/images/icon/dushess.jpg" class="logopartener" alt=""></td>
+                            <td>Duches-garden</td>
+                            <td>77 554 32 11</td>
+                            <td>duchess-garden@gmail.com</td>
+                           
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/images/icon/masterclass.png" class="logopartener" alt=""></td>
+                            <td>Master-Class canada</td>
+                            <td>75 788 54 09</td>
+                            <td>masterclass@gmail.com</td>
+                            
+                          </tr>
+                          <tr>
+                            <td><img src="./assets/images/icon/molabi.jpeg" class="logopartener" alt=""></td>
+                            <td>Molabi</td>
+                            <td>75 788 54 09</td>
+                            <td>molabi@gmail.com</td>
+                            
+                          </tr>
+                         
+                        </tbody>
+                      </table>
+                      <!-- fin -->
+      
+                      <!-- paginnation -->
+                      <nav aria-label="Page navigation example" style="margin: 20px;">
+                        <ul class="pagination justify-content-end">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" style="height: 30px;"> <<< </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#"style="height: 30px;"> &nbsp;&nbsp; 1 &nbsp;&nbsp;</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" style="height: 30px;"> >>> </a>
+                          </li>
+                        </ul>
+                      </nav>
+                      <!-- fin -->
+                </div>  
+          </div>
+        </div>
+      </div>
+    </main>
+    </div>
+</body>
+</html>

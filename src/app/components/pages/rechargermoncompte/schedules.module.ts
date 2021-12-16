@@ -6,6 +6,7 @@ import { SchedulesComponent } from './schedules.component';
 import { SharedModule } from '../../shared/shared.module';
 import { VideoComponent } from './video/video.component';
 import { ContactComponent } from './contact/contact.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -13,7 +14,7 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     CommonModule,
     SchedulesRoutingModule,
-    SharedModule
+    SharedModule,NgbModule
   ]
 })
 export class SchedulesModule { }

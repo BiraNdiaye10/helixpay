@@ -7,8 +7,34 @@
     text-decoration: none;
     font-family: 'Montserrat';
   }
+  ::ng-deep  .accordion>.card>.card-header {
+    border-radius: 0;
+    margin-bottom: -1px;
+    background-color: #032560 !important;
+    color: white !important;
+    text-decoration: none !important;
+    height: 50px !important;
+  }
+  ::ng-deep .card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    background: #000637 !important;
+    color: white !important;
+  }
+  ::ng-deep .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    color: white;
+    box-shadow: none;
+    text-decoration: none;
+    font-size: 13px !important;
+  }
+  ::ng-deep .accordion>.card {
+    overflow: hidden;
+    border-color: #000637 !important;
+  }
   .sidebar{
-    width: 279px;
+    width: 245px;
     position: fixed;
     left: 0;
     top: 0;
@@ -19,7 +45,7 @@
   }
   .sidebar-brand{
     height: 90px;
-    padding: 1rem 0rem 1rem 2rem;
+    padding: 1rem 1rem 1rem 2rem;
     color: #fff;
   }
   .sidebar-brand span{
@@ -28,55 +54,58 @@
   }
   .sidebar-menu li{
     width: 100%;
-    margin-bottom: 2rem;
-    padding-left: 10%;
+    margin-bottom: 1rem;
+    padding-left: 6%;
+    margin-left: -8px;
   }
   .sidebar-menu{
-    margin-top: 1rem;
+    margin-top: 4rem;
+    background: #032560;
   }
   .sidebar-menu a{
     padding-left: 1rem;
     display: block;
-    color: #fff;
+    color: #ffffff;
     font-size: 1.1rem;
+    font-size: 11px;
   }
   .sidebar-menu a span:first-child{
     padding-right: 1rem;
     font-size: 1.5rem;
   }
   .sidebar-menu a.active{
-    background: #2f5597;
+    background: #032560;
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: #ffffff;
     border-radius: 30px 0px 0px 0px;
   }
-  .content{
-    transition: margin-left 300ms;
-    margin-left: 22%;
-  }
-  header{
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    box-shadow: 2px 5px 15px 2px rgb(0 0 0 / 10%);
-    position: fixed;
-    left: 22%;
-    width: calc(100% - 22%);
-    top: 0;
-    z-index: 100;
-    transition: left 300ms;
-    height: 80px;
-  }
-  
-  
-  .accueil{
-    font-size: 1.5rem;
-    padding-right:1rem;
-    margin-left: 15px;
-    color: #000637;
-  }
+   /* ================== */
+    .content{
+      transition: margin-left 300ms;
+      margin-left:19.1%;
+    }
+    header{
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      box-shadow: 2px 5px 15px 2px rgb(0 0 0 / 10%);
+      position: fixed;
+      left: 19.2%;
+      width: calc(100% - 19.2%);
+      top: 0;
+      z-index: 100;
+      transition: left 300ms;
+      height: 70px;
+    }
+    
+    .accueil{
+      font-size: 1rem;
+      padding-right:1rem;
+      margin-left: 15px;
+      color: #000637;
+    }
   .search-wrapper{
     border: 1px solid #000637;
     border-radius: 20px;
@@ -139,7 +168,7 @@
   
   
   main{
-    margin-top: 50px;
+    margin-top: 40px;
     background: #0c5fa321;
     padding: 2rem 1.5rem;
     min-height: calc(100vh);
@@ -368,74 +397,7 @@
     left: 60px;
   }
   
-  .calendar{
-    padding-top: 2rem;
-  }
-  ul {
-    list-style-type: none;
-  }
   
-  /* ================================ */
-  .accordion {
-    max-width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    overflow: hidden;
-    font-family: "Quicksand", sans-serif;
-    background: #2f5597;
-  }
-  
-  .accordion__label,
-  .accordion__content {
-    padding: 14px 20px;
-  }
-  
-  .accordion__label {
-    display: block;
-    color: #ffffff;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-    transition: background 0.1s;
-  }
-  
-  .accordion__label:hover {
-    background: rgba(0, 0, 0, 0.1);
-  }
-  
-  .accordion__label::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 20px;
-    width: 12px;
-    height: 6px;
-    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
-    background-size: contain;
-    transition: transform 0.4s;
-  }
-  
-  .accordion__content {
-    background: #000637;
-    line-height: 1.6;
-    font-size: 0.85em;
-    display: none;
-  }
-  
-  .accordion__input {
-    display: none;
-  }
-  
-  .accordion__input:checked ~ .accordion__content {
-    display: block;
-  }
-  
-  .accordion__input:checked ~ .accordion__label::after {
-    transform: translateY(-50%) rotate(0.5turn);
-  }
-  
-  /* ========================== */
   
   
   @media only screen and (max-width: 960px){

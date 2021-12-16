@@ -1,140 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <title>Admin </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-   <div class="side-menu">
-       <div class="brand-name">
-       <img src="./assets/images/logo-2.png" style="width: 130px;height: 100px;" alt="">
-       </div>
-       <ul>
-        <li> <img src="./assets/images/recharger.png" style="width: 30px;height: 30px;" alt="">&nbsp; <span>Recharger mon compte</span></li>
-        <li> <img src="./assets/images/recharger.png" style="width: 30px;height: 30px;" alt="">&nbsp; <span>Recharge en attente</span></li>
-        <li> <img src="./assets/images/recharger.png" style="width: 30px;height: 30px;" alt="">&nbsp; <span>Mes recharges</span></li>
-        <li> <img src="./assets/images/profilb.png" style=" width: 30px;height: 30px;" alt="">&nbsp; <span>Profil du gestionnaire</span></li>
-        <li> <img src="./assets/images/retrait.png" style="width: 30px;height: 30px; " alt=""> &nbsp;  <span>Compte de retrait</span></li>
-        <li> <img src="./assets/images/retrait.png" style="width: 30px;height: 30px;" alt=""> &nbsp;<span>Retirer de l'argent</span></li>
-        <li> <img src="./assets/images/retrait.png" style="width: 30px;height: 30px;" alt=""> &nbsp;<span>Retraits en attente</span></li>
-       </ul>
-   </div> 
-   <div class="container">
-       <div class="header">
-           <div class="nav">
-               <div class="search">
-                <input type="text" placeholder="Search..">
-                <button type="submit"><img src="./assets/images/search.png" alt=""></button>
-               </div>
-               <div class="user">
-                   <a href="#" class="btn">Add new</a>
-                   <img src="./assets/images/notification.png" alt="">
-               <div class="img-case">
-                <img src="./assets/images/user.jpeg" alt="">
-                
-               </div>
-            </div>
-         </div>
-       </div>
-       <div class="content">
-   
-           <div class="cards">
-               <div class="card">
-                <mat-tab-group>
-                    <mat-tab label="Partenaires"> 
-                        
-                       <div class="row">
+  <input type="checkbox" id="menu" name="">
+  <div class="sidebar">
+    <div class="sidebar-brand">
+        <div><img src="./assets/images/logo.png" alt=""></div>
+      <span>Compte Professionel</span><br>
+      <span style="font-size: 13px;">Numero de compte</span><br> <span style="font-size: 10px;">(14521600346782145578)</span>
+    </div>
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <a routerLink='/dashboard' class="active"><span class="fa fa-th-large" style="font-size: 15px;"></span><span>Dashboard</span></a>
+        </li>
+        <li>
+        
+            <div class="container-fluid" >
+              <ngb-accordion [closeOthers]="true" activeIds="static-1" >
+                  <ngb-panel>
+                    <!-- <span class="fa fa-address-book"></span>&nbsp;&nbsp; -->
+                      <ng-template ngbPanelTitle>
+                        Recharger le compte <i class="fa fa-arrow-circle-down"></i>
+                          <span class="toggle_btn"></span>
+                      </ng-template>
+                      <ng-template ngbPanelContent>
+                          <!-- ================ -->
                           
-                           <div class="col-xs-3 col-sm-3 col-md-3">
-                            <div class="car">
-                                <img src="../assets/images/wave.png" alt="">
-                            </div>
-                           </div>
-                           <div class="col-xs-3 col-sm-3 col-md-3">
-                            <div class="car">
-                                <img src="../assets/images/free.png" alt="">
-                            </div>
-                           </div>
-                           <div class="col-xs-3 col-sm-3 col-md-3">
-                            <div class="car">
-                                <img src="../assets/images/om.png" alt="">
-                            </div>
-                           </div>
-                           <div class="col-xs-3 col-sm-3 col-md-3">
-                            <div class="car">
-                                <img src="../assets/images/e-money.png" alt="">
-                            </div>
-                           </div>
-                       </div>
-                       <div class="row">
-                        <div class="col-xs-3 col-sm-3 col-md-3">
-                         <div class="car">
-                             <img src="../assets/images/logo.png" alt="">
-                         </div>
-                        </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3">
-                         <div class="car">
-                             <img src="../assets/images/logo.png" alt="">
-                         </div>
-                        </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3">
-                         <div class="car">
-                             <img src="../assets/images/logo.png" alt="">
-                         </div>
-                        </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3">
-                         <div class="car">
-                             <img src="../assets/images/logo.png" alt="">
-                         </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-3 col-sm-3 col-md-3">
-                         <div class="car">
-                             <img src="../assets/images/logo.png" alt="">
-                         </div>
-                        </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3">
-                         <div class="car">
-                             <img src="../assets/images/logo.png" alt="">
-                         </div>
-                        </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3">
-                         <div class="car">
-                             <img src="../assets/images/logo.png" alt="">
-                         </div>
-                        </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3">
-                         <div class="car">
-                             <img src="../assets/images/logo.png" alt="">
-                         </div>
-                        </div>
-                    </div>
-                    </mat-tab>
-                    <mat-tab label="Transfere d'argent"> Content 2 </mat-tab>
-                    <mat-tab label="Paiement de Facture"> Content 3 </mat-tab>
-                    <mat-tab label="Mobile Money"> Content 2 </mat-tab>
-                   
-                  </mat-tab-group>
-                  
-                  
-               </div>
-              
-           </div>
+                          <ul>
+                          
+                            <li><a routerLink='/rechargermoncompte'><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Recharge mon Compte</a></li>
+                            <li><a routerLink='/rechargeenattente'><i class="fa fa-address-book"></i>&nbsp;&nbsp;Recharge en attente </a></li>
+                            <li><a routerLink='/mesrecharge'><i class="fa fa-money"></i>&nbsp;&nbsp; Mes recharge</a></li>
+                          </ul>
+                          <!-- ================== -->
+                      </ng-template>
+                  </ngb-panel>
+              </ngb-accordion>
+
+              <ngb-accordion [closeOthers]="true" activeIds="static-1">
+                  <ngb-panel>
+                      <ng-template ngbPanelTitle>
+                         Retirer de l'argent &nbsp;<i class="fa fa-arrow-circle-down"></i>
+                          <span class="toggle_btn"></span>
+                      </ng-template>
+                      <ng-template ngbPanelContent>
+                        <ul>
+                          <li><a routerLink='/retirerdelargent'><i class="fa fa-money"></i>&nbsp;&nbsp;retirer de l'argent </a></li>
+                          <li><a routerLink='/profildugestionnaire'><i class="fa fa-user-circle"></i>&nbsp;&nbsp;Profil du gestionnaire</a></li>
+                          <li><a routerLink='/comptederetrait'> <i class="fa fa-outdent"></i>&nbsp;&nbsp;Compte de retrait</a></li>
+                          <li><a routerLink='/rechargermoncompte'><i class="fa fa-money"></i>&nbsp;&nbsp;Retrait en attente</a></li>
+                        </ul>
+                      </ng-template>
+                  </ngb-panel>
+              </ngb-accordion>   
+            </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <header>
+      <p><label for="menu"><span class="fa fa-bars"></span></label><span class="accueil">Menu</span></p>
+    
+      <div class="search-wrapper">
+        <span class="fa fa-search"></span>
+        <input type="search" name="" placeholder="recherche" />
+      </div>
+    
+      <div class="fa fa-bell">  
+      </div>
+      <div class="user-wrapper" id="dropdown">
+        
+        <div class="row">
+         
+            <div class="col-3">
+              <img src="./assets/images/user.jpeg" width="30" height="30" class="logo-admin">
+              <div class="dropdown-content">
+              <p>Mon profil</p>
+              <p>Deconnexion</p>
+              </div>
+            </div>
            
-       </div>
-   </div>
-    <script>
-        function menuToggle(){
-            const toggleMenu = document.querySelector('.menu');
-            toggleMenu.classList.toggle('active')
-        }
-    </script>
+        <div class="col-3"><h4>Aissatou</h4>
+          <small>Admin</small></div>
+        </div>
+        
+        
+        
+      </div>
+    </header>
+    
+    <main>
+      <div class="cards">
+        <div class="card-single">
+          <div>
+            <h2>88</h2>
+            <small>Transactions total</small>
+          </div>
+          <div>
+            <span class="fa fa-shopping-cart"></span>
+          </div>
+        </div>
+    
+        <div class="card-single">
+          <div>
+            <h2>30</h2>
+            <small>Retraits total</small>
+          </div>
+          <div>
+            <span class="fa fa-newspaper-o"></span>
+          </div>
+        </div>
+        <div class="card-single">
+          <div>
+            <h2>58</h2>
+            <small>Rechargements</small>
+          </div>
+          <div>
+            <span class="fa fa-outdent"></span>
+          </div>
+        </div>
+        <div class="card-single">
+          <div>
+            <h2>20</h2>
+            <small>En attente</small>
+          </div>
+          <div>
+            <span class="fa fa-group"></span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="composant">
+        <div class="ventes">
+          <div class="case">
+            <div class="header-case">
+              <h2>Prestataire de services de paiement</h2>
+              
+            </div>
+                <div class="tableau">
+                  
+                    <div class="contact-form" style="margin-top: 30px;">
+                        <div class="form-group">
+                         <div class="row">
+                          <div class="col-sm-1  m-2"><label for="validationDefault04" class="control-label col-sm-6" style="font-size: 13px;">Afficher par</label></div>
+                          <div class="col-sm-1 m-2">
+                          <select class="custom-select" id="validationDefault04" required style="font-size: 13px;">
+                            <option selected disabled value="">10</option>
+                            <option>10</option><option>20</option><option>30</option>
+                          </select></div>
+                          <div class="col-sm-1  m-2" style="font-size: 13px;">entrées</div>
+                         </div>
+                        </div>
+                      </div>
+                      <!-- tableau transaction -->
+                      <mat-tab-group>
+                        <mat-tab label="Partenaires PSP"> 
+                            
+                           <div class="row psp">
+                            
+                               <div class="col-xs-2 col-sm-2 col-md-2 psp">
+                                <div class="car shadow">
+                                    <img src="../assets/images/wave.png" alt="">
+                                </div>
+                               </div>
+                               <div class="col-xs-2 col-sm-2 col-md-2 psp">
+                                <div class="car shadow">
+                                    <img src="../assets/images/free.png" alt="">
+                                </div>
+                               </div>
+                               <div class="col-xs-2 col-sm-2 col-md-2 psp">
+                                <div class="car shadow">
+                                    <img src="../assets/images/om.png" alt="">
+                                </div>
+                               </div>
+                               <div class="col-xs-2 col-sm-2 col-md-2 psp">
+                                <div class="car shadow">
+                                    <img src="../assets/images/proximo.png" alt="">
+                                </div>
+                               </div>
+                               <div class="col-xs-2 col-sm-2 col-md-2 psp">
+                                <div class="car shadow">
+                                    <img src="../assets/images/e-money.png" alt="">
+                                </div>
+                               </div>
+                               <div class="col-xs-2 col-sm-2 col-md-2 psp">
+                                <div class="car shadow">
+                                    <img src="../assets/images/mastercard.png" alt="">
+                                </div>
+                               </div>
+                               <div class="col-xs-2 col-sm-2 col-md-2 psp">
+                                <div class="car shadow">
+                                    <img src="../assets/images/visa.png" alt="">
+                                </div>
+                               </div>
+                              
+                           </div>
+                           
+                       
+                        </mat-tab>
+                        <mat-tab label="Transfere d'argent"> Content 2 </mat-tab>
+                        <mat-tab label="Paiement de Facture"> Content 3 </mat-tab>
+                        <mat-tab label="Mobile Money"> Content 2 </mat-tab>
+                       
+                      </mat-tab-group>
+                      <!-- fin -->
+      
+                      <!-- paginnation -->
+                      <nav aria-label="Page navigation example" style="margin: 20px;">
+                        <ul class="pagination justify-content-end">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" style="height: 30px;"> <<< </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#"style="height: 30px;"> &nbsp;&nbsp; 1 &nbsp;&nbsp;</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" style="height: 30px;"> >>> </a>
+                          </li>
+                        </ul>
+                      </nav>
+                      <!-- fin -->
+                </div>  
+          </div>
+        </div>
+
+        <div class="stock">
+            <div class="case">
+              <div class="header-case">
+                <h2>Partenaires Integrateur</h2>
+                
+              </div>
+              <div class="body-case">
+                <div class="all-users">
+                  <div class="infos">
+                  <img src="./assets/images/icon/dibi.png" class="logopartener" width="30" height="30">
+                    <div>
+                    <h4>Allo-Dibi</h4>
+                    <small>restaurant</small>
+                  </div>
+                  </div>
+                  
+                <div class="user-contact">
+                  <span class="fa fa-envelope"></span>
+                  <span class="fa fa-phone"></span>
+                </div>
+              </div>
+                <div class="all-users">
+                  <div class="infos">
+                  <img src="./assets/images/icon/dushess.jpg" class="logopartener" width="30" height="30">
+                    <div>
+                    <h4>Duchess</h4>
+                    <small>site web</small>
+                  </div>
+                  </div>
+                  
+                <div class="user-contact">
+                  <span class="fa fa-envelope"></span>
+                  <span class="fa fa-phone"></span>
+                </div>
+              </div>
+      
+                  <div class="all-users">
+                  <div class="infos">
+                  <img src="./assets/images/icon/molabi.jpeg" class="logopartener" width="30" height="30">
+                    <div>
+                    <h4>Molabi</h4>
+                    <small>site web</small>
+                  </div>
+                  </div>
+                  
+                <div class="user-contact">
+                  <span class="fa fa-envelope"></span>
+                  <span class="fa fa-phone"></span>
+                </div>
+              </div>
+      
+                  <div class="all-users">
+                  <div class="infos">
+                  <img src="./assets/images/icon/masterclass.png" class="logopartener" width="30" height="30">
+                    <div>
+                    <h4>Master Classe</h4>
+                    <small>web</small>
+                  </div>
+                  </div>
+                  
+                <div class="user-contact"> 
+                  <span class="fa fa-envelope"></span>
+                  <span class="fa fa-phone"></span>
+                </div>
+              </div>
+      
+              
+              
+              </div>
+              <button class="btn" routerLink='/partenaireintegrateurs'>voir plus<span class="fa fa-arrow-right"></span></button>
+            </div>
+          </div>
+      </div>
+
+     
+    </main>
+    </div>
 </body>
 </html>

@@ -8,6 +8,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { ContentComponent } from './content/content.component';
 
 import { MatTabsModule } from '@angular/material/tabs';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [GalleryTwoComponent, ContentComponent],
@@ -16,7 +17,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     GalleryTwoRoutingModule,
     SharedModule,
     NgxPaginationModule,
-    MatTabsModule
+    MatTabsModule,NgbModule,
   ]
 })
 export class GalleryTwoModule { }

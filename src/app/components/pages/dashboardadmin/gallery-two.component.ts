@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import moment from 'moment';
 
 @Component({
   selector: 'app-gallery-two',
@@ -13,6 +14,7 @@ export class GalleryTwoComponent implements OnInit {
   ftlogo = "assets/images/logo-2.png";
   ftbg = "assets/images/footer-3.jpg";
 
+  date=moment().format('ll'); 
   ngOnInit(): void {
   }
 

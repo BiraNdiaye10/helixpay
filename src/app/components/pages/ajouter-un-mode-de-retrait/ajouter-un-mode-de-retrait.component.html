@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <input type="checkbox" id="menu" name="">
+  <div class="sidebar">
+    <div class="sidebar-brand">
+        <div><img src="./assets/images/logo.png" alt=""></div>
+      <span>Compte Professionel</span><br>
+      <span style="font-size: 13px;">Numero de compte</span><br> <span style="font-size: 10px;">(14521600346782145578)</span>
+    </div>
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <a routerLink='/dashboard' class="active"><span class="fa fa-th-large" style="font-size: 15px;"></span><span>Dashboard</span></a>
+        </li>
+        <li>
+        
+            <div class="container-fluid" >
+              <ngb-accordion [closeOthers]="true" activeIds="static-1" >
+                  <ngb-panel>
+                    <!-- <span class="fa fa-address-book"></span>&nbsp;&nbsp; -->
+                      <ng-template ngbPanelTitle>
+                        Recharger le compte <i class="fa fa-arrow-circle-down"></i>
+                          <span class="toggle_btn"></span>
+                      </ng-template>
+                      <ng-template ngbPanelContent>
+                          <!-- ================ -->
+                          
+                          <ul>
+                          
+                            <li><a routerLink='/rechargermoncompte'><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Recharge mon Compte</a></li>
+                            <li><a routerLink='/rechargeenattente'><i class="fa fa-address-book"></i>&nbsp;&nbsp;Recharge en attente </a></li>
+                            <li><a routerLink='/mesrecharge'><i class="fa fa-money"></i>&nbsp;&nbsp; Mes recharge</a></li>
+                          </ul>
+                          <!-- ================== -->
+                      </ng-template>
+                  </ngb-panel>
+              </ngb-accordion>
+
+              <ngb-accordion [closeOthers]="true" activeIds="static-1">
+                  <ngb-panel>
+                      <ng-template ngbPanelTitle>
+                         Retirer de l'argent &nbsp;<i class="fa fa-arrow-circle-down"></i>
+                          <span class="toggle_btn"></span>
+                      </ng-template>
+                      <ng-template ngbPanelContent>
+                        <ul>
+                          <li><a routerLink='/retirerdelargent'><i class="fa fa-money"></i>&nbsp;&nbsp;retirer de l'argent </a></li>
+                          <li><a routerLink='/profildugestionnaire'><i class="fa fa-user-circle"></i>&nbsp;&nbsp;Profil du gestionnaire</a></li>
+                          <li><a routerLink='/comptederetrait'> <i class="fa fa-outdent"></i>&nbsp;&nbsp;Compte de retrait</a></li>
+                          <li><a routerLink='/rechargermoncompte'><i class="fa fa-money"></i>&nbsp;&nbsp;Retrait en attente</a></li>
+                        </ul>
+                      </ng-template>
+                  </ngb-panel>
+              </ngb-accordion>   
+            </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <header>
+      <p><label for="menu"><span class="fa fa-bars"></span></label><span class="accueil">Menu</span></p>
+    
+      <div class="search-wrapper">
+        <span class="fa fa-search"></span>
+        <input type="search" name="" placeholder="recherche" />
+      </div>
+    
+      <div class="fa fa-bell">  
+      </div>
+      <div class="user-wrapper" id="dropdown">
+        
+        <div class="row">
+         
+            <div class="col-3">
+              <img src="./assets/images/user.jpeg" width="30" height="30" class="logo-admin">
+              <div class="dropdown-content">
+              <p>Mon profil</p>
+              <p>Deconnexion</p>
+              </div>
+            </div>
+           
+        <div class="col-3"><h4>Aissatou</h4>
+          <small>Admin</small></div>
+        </div>
+        
+        
+        
+      </div>
+    </header>
+    
+    <main>
+    
+      <div class="composant">
+        <div class="ventes">
+          <div class="case">
+                <div class="tableau">
+                   <div style="background-color: rgba(250, 210, 124, 0.582);">
+                     <h4>Il est important de noter que des frais de service de 4% 
+                         s'appliqueront au montant que vous souhaiteriez retirer.</h4>
+                   </div>
+                      <!-- tableau ajouter mode de retrait -->
+                      <table width="100%" style="margin-top: 28px;">
+
+                        <thead>
+                          <tr >
+                            <td>Ajouter un mode de retrait</td>
+                          </tr>
+                        </thead>
+                        <tbody >
+                            <tr style="background-color: rgb(250, 248, 248);">
+                                <td>
+                                <div > <i class="fa fa-info-circle"></i>
+                                     En fonction des informations renseignées au niveau du profil du gestionnaire, 
+                                    les options de retrait disponibles peuvent être différentes.</div></td><td></td>
+                            </tr>
+                          <tr>
+                            
+                            <td><h2><input type="radio" name="gender" value="virer">  Virement électronique vers un compte bancaire<br></h2></td>
+                           </tr>
+                           <tr >
+                              
+                                <section class="ovent-faq-section pt-120 pb-120">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="faq_wrapper">
+                                                    <ngb-accordion [closeOthers]="true" activeIds="static-1">
+                                                        <ngb-panel>
+                                                            <ng-template ngbPanelTitle>
+                                                                Informations obligatoires
+                                                                <span class="toggle_btn"></span>
+                                                            </ng-template>
+                                                            <ng-template ngbPanelContent>
+                                                                <!-- ================ -->
+
+                                                                <div class="contact-form">
+                         
+                                                                    <div class="form-group">
+                                                                      <label class="control-label col-sm-8" for="text">Intitulé du compte</label>
+                                                                      <div class="col-sm-10">
+                                                                        <input type="text" class="form-control" id="text" placeholder="" name="firstname">
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                      <label class="control-label col-sm-8" for="text"> Nom de la banque :</label>
+                                                                      <div class="col-sm-10">
+                                                                        <input type="text" class="form-control" id="text" placeholder="" name="bank">
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                      <label class="control-label col-sm-8" for="text"> Relevé d'identité Bancaire (Numéro de complet RIB):</label>
+                                                                      <div class="col-sm-10">
+                                                                        <input type="text" class="form-control" id="text" placeholder="" name="nin">
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                      <label class="control-label col-sm-8" for="text">Ressaisissez le relevé d'identité Bancaire (RIB):</label>
+                                                                      <div class="col-sm-10">
+                                                                        <input type="text" class="form-control" id="text" placeholder="XXXXXXXXXXXXXXXXXXXXXXX " name="tel">
+                                                                      </div>
+                                                                    </div>
+                                          
+                                                                      <div class="form-group">
+                                                                        <label for="validationDefault04" class="control-label col-sm-4">Pays</label>
+                                                                        <div class="col-sm-10">
+                                                                        <select class="custom-select" id="validationDefault04" required>
+                                                                          <option selected disabled value="">Selectionner un pays</option>
+                                                                          <option>Senegal</option><option>Maroc</option><option>France</option>
+                                                                        </select></div>
+                                                                      </div>
+                                                                      
+                                          
+                                                                  </div> 
+                                                                <!-- ================== -->
+                                                            </ng-template>
+                                                        </ngb-panel>
+                                                    </ngb-accordion>
+                                
+                                                    <ngb-accordion [closeOthers]="true" activeIds="static-1">
+                                                        <ngb-panel>
+                                                            <ng-template ngbPanelTitle>
+                                                                Informations complémentaires pour les comptes hors zone UEMOA
+                                                                <span class="toggle_btn"></span>
+                                                            </ng-template>
+                                                            <ng-template ngbPanelContent>
+                                                                <div class="contact-form">
+                         
+                                                                    <div class="form-group">
+                                                                      <label class="control-label col-sm-8" for="text">Code IBAN</label>
+                                                                      <div class="col-sm-10">
+                                                                        <input type="text" class="form-control" id="text" placeholder="" name="codeiban">
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                      <label class="control-label col-sm-8" for="text">Code Guichet:</label>
+                                                                      <div class="col-sm-10">
+                                                                        <input type="text" class="form-control" id="text" placeholder="" name="guichet">
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                      <label class="control-label col-sm-8" for="text">Code international d'identification de votre banque (Code BIC ou Code SWIFT):</label>
+                                                                      <div class="col-sm-10">
+                                                                        <input type="text" class="form-control" id="text" placeholder="" name="code">
+                                                                      </div>
+                                                                    </div>
+                                                                  </div> 
+                                                            </ng-template>
+                                                        </ngb-panel>
+                                                    </ngb-accordion>
+                                                  
+                                                </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+                                </section>
+                                   
+                               
+                           </tr>
+                           <tr>
+                               <td><input type="checkbox" name="gender" value="ajout">  Définir ce mode de retrait en tant que Principal</td>
+                           </tr>
+                        
+                            <tr>
+                              
+                                  <td><button type="submit" (click)="opensweetalert()" class="btn btn-default " style="background-color: #2f5597;
+                                    border-radius: 50px;">Enregistrer </button>
+                                    <button type="submit" routerLink='/' class="btn btn-default " style="background-color: #2f5597;
+                                        border-radius: 50px;">Annuler </button> </td> 
+                              </tr>
+                       
+                        </tbody>
+                       
+                      </table>
+                      <!-- fin -->
+      
+                </div>  
+          </div>
+        </div>
+      </div>
+    </main>
+    </div>
+</body>
+</html>

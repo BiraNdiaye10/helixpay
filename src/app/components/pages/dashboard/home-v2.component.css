@@ -7,8 +7,36 @@
   text-decoration: none;
   font-family: 'Montserrat';
 }
+
+ /* ================= */
+ ::ng-deep  .accordion>.card>.card-header {
+  border-radius: 0;
+  margin-bottom: -1px;
+  background-color: #032560 !important;
+  color: white !important;
+  text-decoration: none !important;
+  height: 50px !important;
+}
+::ng-deep .card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  background: #000637 !important;
+  color: white !important;
+}
+::ng-deep .btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  color: white;
+  box-shadow: none;
+  text-decoration: none;
+  font-size: 13px !important;
+}
+::ng-deep .accordion>.card {
+  overflow: hidden;
+  border-color: #000637 !important;
+}
 .sidebar{
-  width: 279px;
+  width: 245px;
   position: fixed;
   left: 0;
   top: 0;
@@ -19,7 +47,7 @@
 }
 .sidebar-brand{
   height: 90px;
-  padding: 1rem 0rem 1rem 2rem;
+  padding: 1rem 1rem 1rem 2rem;
   color: #fff;
 }
 .sidebar-brand span{
@@ -28,55 +56,59 @@
 }
 .sidebar-menu li{
   width: 100%;
-  margin-bottom: 2rem;
-  padding-left: 10%;
+  margin-bottom: 1rem;
+  padding-left: 6%;
+  margin-left: -8px;
 }
 .sidebar-menu{
-  margin-top: 1rem;
+  margin-top: 4rem;
+  background: #032560;
 }
 .sidebar-menu a{
   padding-left: 1rem;
   display: block;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.1rem;
+  font-size: 11px;
 }
 .sidebar-menu a span:first-child{
   padding-right: 1rem;
   font-size: 1.5rem;
 }
 .sidebar-menu a.active{
-  background: #2f5597;
+  background: #032560;
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: #ffffff;
   border-radius: 30px 0px 0px 0px;
 }
-.content{
-  transition: margin-left 300ms;
-  margin-left: 22%;
-}
-header{
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  box-shadow: 2px 5px 15px 2px rgb(0 0 0 / 10%);
-  position: fixed;
-  left: 22%;
-  width: calc(100% - 22%);
-  top: 0;
-  z-index: 100;
-  transition: left 300ms;
-  height: 80px;
-}
-
-
-.accueil{
-  font-size: 1.5rem;
-  padding-right:1rem;
-  margin-left: 15px;
-  color: #000637;
-}
+ /* ================== */
+  .content{
+    transition: margin-left 300ms;
+    margin-left:19.1%;
+  }
+  header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 2px 5px 15px 2px rgb(0 0 0 / 10%);
+    position: fixed;
+    left: 19.2%;
+    width: calc(100% - 19.2%);
+    top: 0;
+    z-index: 100;
+    transition: left 300ms;
+    height: 70px;
+  }
+  
+  
+  .accueil{
+    font-size: 1rem;
+    padding-right:1rem;
+    margin-left: 15px;
+    color: #000637;
+  }
 .search-wrapper{
   border: 1px solid #000637;
   border-radius: 20px;
@@ -139,7 +171,7 @@ header{
 
 
 main{
-  margin-top: 50px;
+  margin-top: 40px;
   background: #0c5fa321;
   padding: 2rem 1.5rem;
   min-height: calc(100vh);
