@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import moment from 'moment';
 
 @Component({
   selector: 'app-demanderpaiement',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class DemanderpaiementComponent implements OnInit {
 
   constructor() { }
-
+  date=moment().format('ll'); 
   ngOnInit(): void {
   }
 

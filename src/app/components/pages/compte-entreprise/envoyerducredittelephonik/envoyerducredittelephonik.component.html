@@ -1,1 +1,226 @@
-<p>envoyerducredittelephonik works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <input type="checkbox" id="menu" name="">
+  <div class="sidebar">
+    <div class="sidebar-brand">
+        <div><img src="./assets/images/logo.png" alt=""></div>
+      <span style="font-size: 14px;">Compte Professionel</span><br>
+      <span style="font-size: 13px;">Numero de compte</span><br> <span style="font-size: 10px;">(14521600346782145578)</span>
+    </div>
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <a routerLink='/compteentreprise' class="active">
+              <span class="fa fa-th-large" style="font-size: 15px;">
+            </span><span>Dashboard</span></a>
+        </li>
+        <li>
+            <a routerLink='/gererboutique' class="active">
+                <span class="fa fa-cart-plus" style="font-size: 15px;">
+              </span><span>Gerer ma boutique</span></a>
+          </li>
+          <li>
+            <a routerLink='/transfereArgent' class="active">
+                <span class="fa fa-arrow-circle-right" style="font-size: 15px;">
+              </span><span>Transferer de l'argent</span></a>
+          </li>
+          <li>
+            <a routerLink='/demanderpaiement' class="active">
+                <span class="fa fa-share" style="font-size: 15px;">
+              </span><span>Demander un paiement</span></a>
+          </li>
+          <li>
+            <a routerLink='/collectepaiement' class="active">
+                <span class="fa fa-money" style="font-size: 15px;">
+              </span><span>collecter des paiements</span></a>
+          </li>
+          <li>
+            <a routerLink='/dashboard' class="active">
+                <span class="fa fa-money" style="font-size: 15px;">
+              </span><span>Debourser des paiements</span></a>
+          </li>
+          <li>
+            <a routerLink='/envoyerducreditTelephone' class="active">
+                <span class="fa fa-phone" style="font-size: 15px;">
+              </span><span>Envoyer du credit tel</span></a>
+          </li>
+          <li>
+            <a routerLink='/gererclient' class="active">
+                <span class="fa fa-address-book" style="font-size: 15px;">
+              </span><span>Gerer mes clients</span></a>
+          </li>
+          <li>
+            <a routerLink='/apiwebmobile' class="active">
+                <span class="fa fa-paperclip" style="font-size: 15px;">
+              </span><span>API Web/Mobile</span></a>
+          </li>
+          <li>
+            <a routerLink='/roles' class="active">
+                <span class="fa fa-users" style="font-size: 15px;">
+              </span><span>Gestion des roles</span></a>
+          </li>
+        <li>
+        
+            <div class="container-fluid" >
+              <ngb-accordion [closeOthers]="true" activeIds="static-1" >
+                  <ngb-panel>
+                    <!-- <span class="fa fa-address-book"></span>&nbsp;&nbsp; -->
+                      <ng-template ngbPanelTitle>
+                        Recharger le compte <i class="fa fa-arrow-circle-down"></i>
+                          <span class="toggle_btn"></span>
+                      </ng-template>
+                      <ng-template ngbPanelContent>
+                          <!-- ================ -->
+                          
+                          <ul>
+                          
+                            <li><a routerLink='/rechargermoncompte'><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Recharge mon Compte</a></li>
+                            <li><a routerLink='/rechargeenattente'><i class="fa fa-address-book"></i>&nbsp;&nbsp;Recharge en attente </a></li>
+                            <li><a routerLink='/mesrecharge'><i class="fa fa-money"></i>&nbsp;&nbsp; Mes recharge</a></li>
+                          </ul>
+                          <!-- ================== -->
+                      </ng-template>
+                  </ngb-panel>
+              </ngb-accordion>
+
+              <ngb-accordion [closeOthers]="true" activeIds="static-1">
+                  <ngb-panel>
+                      <ng-template ngbPanelTitle>
+                         Retirer de l'argent &nbsp;<i class="fa fa-arrow-circle-down"></i>
+                          <span class="toggle_btn"></span>
+                      </ng-template>
+                      <ng-template ngbPanelContent>
+                        <ul>
+                          <li><a routerLink='/retirerdelargent'><i class="fa fa-money"></i>&nbsp;&nbsp;retirer de l'argent </a></li>
+                          <li><a routerLink='/profildugestionnaire'><i class="fa fa-user-circle"></i>&nbsp;&nbsp;Profil du gestionnaire</a></li>
+                          <li><a routerLink='/comptederetrait'> <i class="fa fa-outdent"></i>&nbsp;&nbsp;Compte de retrait</a></li>
+                          <li><a routerLink='/rechargermoncompte'><i class="fa fa-money"></i>&nbsp;&nbsp;Retrait en attente</a></li>
+                        </ul>
+                      </ng-template>
+                  </ngb-panel>
+              </ngb-accordion>   
+            </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+
+    <header>
+      <p><label for="menu"><span class="fa fa-bars"></span></label><span class="accueil">Menu</span></p>
+    
+      <div class="search-wrapper">
+        <span class="fa fa-search"></span>
+        <input type="search" name="" placeholder="recherche" />
+      </div>
+    
+      <div class="fa fa-bell">  
+      </div>
+      <div class="user-wrapper" id="dropdown">
+        
+        <div class="row">
+         
+            <div class="col-3">
+              <img src="./assets/images/user.jpeg" width="30" height="30" class="logo-admin">
+              <div class="dropdown-content">
+              <p>Mon profil</p>
+              <p>Deconnexion</p>
+              </div>
+            </div>
+           
+        <div class="col-3"><h4>Aissatou</h4>
+          <small>Admin</small></div>
+        </div>
+        
+        
+        
+      </div>
+    </header>
+    
+    <main>
+    
+        <div class="composant">
+            <div class="ventes">
+                <div class="case">
+                 <table>
+                     <thead><td></td><td>Créer une nouvelle campagne d'envoi de crédit téléphonique groupé ? <br>
+                      <div class="text-center form-group">        
+                          <div class="col-sm-offset-2 col-sm-10">
+                            
+                            <button type="submit"routerLink='/nouvelcampagneenvoicredit' class="btn btn-default " style="background-color: #2f5597;
+                             border-radius: 50px;">Cliquez ici </button>
+                          </div>
+                        </div>
+                     </td><td></td></thead>
+                 </table>
+                </div>
+            </div><br>
+            <div class="ventes">
+              <div class="case">
+                    <div class="tableau">
+                        <div class="contact-form" style="margin-top: 30px;">
+                            <div class="form-group">
+                             <div class="row">
+                              <div class="col-sm-1  m-2"><label for="validationDefault04" class="control-label col-sm-6" style="font-size: 13px;">Afficher par</label></div>
+                              <div class="col-sm-1 m-2">
+                              <select class="custom-select" id="validationDefault04" required style="font-size: 13px;">
+                                <option selected disabled value="">10</option>
+                                <option>10</option><option>20</option><option>30</option>
+                              </select></div>
+                              <div class="col-sm-1  m-2" style="font-size: 13px;">entrées</div>
+                             </div>
+                            </div>
+                          </div>
+                          <!-- tableau transaction -->
+                          <table width="100%" style="margin-top: 28px;">
+                            <thead>
+                              <tr style="background-color: rgb(250, 248, 248);">
+                                <td>Titre de la collecte</td>
+                                <td> Payeurs </td>
+                                <td>Freq</td>
+                                <td>Montant commun</td>
+                                <td>Montant collecté</td>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Aucune entrée dans la table</td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <!-- fin -->
+          
+                          <!-- paginnation -->
+                          <nav aria-label="Page navigation example" style="margin: 20px;">
+                            <ul class="pagination justify-content-end">
+                              <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" style="height: 30px;"> <<< </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#"style="height: 30px;"> &nbsp;&nbsp; 1 &nbsp;&nbsp;</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" style="height: 30px;"> >>> </a>
+                              </li>
+                            </ul>
+                          </nav>
+                          <!-- fin -->
+                    </div>  
+              </div>
+            </div>
+          </div>
+    </main>
+    </div>
+</body>
+</html>

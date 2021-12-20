@@ -4,12 +4,14 @@ import { AjouterUnModeDeRetraitComponent } from './components/pages/ajouter-un-m
 import { ApiWebMobileComponent } from './components/pages/compte-entreprise/api-web-mobile/api-web-mobile.component';
 import { CollecterdespaiementsComponent } from './components/pages/compte-entreprise/collecterdespaiements/collecterdespaiements.component';
 import { CompteEntrepriseComponent } from './components/pages/compte-entreprise/compte-entreprise.component';
+import { ComptesmsComponent } from './components/pages/compte-entreprise/comptesms/comptesms.component';
 import { DebourserdespaiementsComponent } from './components/pages/compte-entreprise/debourserdespaiements/debourserdespaiements.component';
 import { DemanderpaiementComponent } from './components/pages/compte-entreprise/demanderpaiement/demanderpaiement.component';
 import { EnvoyerducredittelephonikComponent } from './components/pages/compte-entreprise/envoyerducredittelephonik/envoyerducredittelephonik.component';
 import { GerermaboutiqueComponent } from './components/pages/compte-entreprise/gerermaboutique/gerermaboutique.component';
 import { GerermesclientsComponent } from './components/pages/compte-entreprise/gerermesclients/gerermesclients.component';
 import { GestiondesrolesComponent } from './components/pages/compte-entreprise/gestiondesroles/gestiondesroles.component';
+import { NouvelcampagneenvoicreditComponent } from './components/pages/compte-entreprise/nouvelcampagneenvoicredit/nouvelcampagneenvoicredit.component';
 import { NouveldemandepaiementComponent } from './components/pages/compte-entreprise/nouveldemandepaiement/nouveldemandepaiement.component';
 import { TransfereargentComponent } from './components/pages/compte-entreprise/transfereargent/transfereargent.component';
 import { SidebarComponent } from './components/pages/sidebar/sidebar.component';
@@ -64,6 +66,8 @@ const routes: Routes = [
   { path: 'roles',component:GestiondesrolesComponent },
   { path: 'transfereArgent',component:TransfereargentComponent },
   { path: 'nouveldemandepaiement',component:NouveldemandepaiementComponent },
+  { path: 'nouvelcampagneenvoicredit',component:NouvelcampagneenvoicreditComponent },
+  { path: 'comptesms',component:ComptesmsComponent },
   
   
   { path: 'rechargeenattente', loadChildren: () => import('./components/pages/recharge-en-attente/blog-list.module').then(m => m.BlogListModule), data: { breadcrumb: 'Recharge en attente' } },

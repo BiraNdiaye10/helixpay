@@ -31,6 +31,9 @@ import { GerermesclientsComponent } from './components/pages/compte-entreprise/g
 import { GestiondesrolesComponent } from './components/pages/compte-entreprise/gestiondesroles/gestiondesroles.component';
 import { ApiWebMobileComponent } from './components/pages/compte-entreprise/api-web-mobile/api-web-mobile.component';
 import { NouveldemandepaiementComponent } from './components/pages/compte-entreprise/nouveldemandepaiement/nouveldemandepaiement.component';
+import { NouvelcampagneenvoicreditComponent } from './components/pages/compte-entreprise/nouvelcampagneenvoicredit/nouvelcampagneenvoicredit.component';
+import { ComptesmsComponent } from './components/pages/compte-entreprise/comptesms/comptesms.component';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,6 +52,8 @@ import { NouveldemandepaiementComponent } from './components/pages/compte-entrep
     GestiondesrolesComponent,
     ApiWebMobileComponent,
     NouveldemandepaiementComponent,
+    NouvelcampagneenvoicreditComponent,
+    ComptesmsComponent,
    
     
   
@@ -67,7 +72,8 @@ import { NouveldemandepaiementComponent } from './components/pages/compte-entrep
     MatIconModule,
     MatMenuModule,
     MatToolbarModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatDialogModule,
     
   ],
   providers: [],
